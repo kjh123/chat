@@ -1,6 +1,6 @@
 FROM golang:latest
 
-ENV GOPROXY https://goproxy.cn,directory
+ENV GOPROXY https://goproxy.cn,direct
 RUN mkdir /app
 ADD . /app/
 WORKDIR /app
