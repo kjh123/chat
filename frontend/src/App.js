@@ -15,7 +15,7 @@ class App extends Component {
   }
 
   send(event) {
-    if(event.keyCode === 13) {
+    if(event.keyCode === 13 && event.target.value !== "") {
       sendMsg(event.target.value);
       event.target.value = "";
     }
